@@ -10,8 +10,8 @@ public class Customer extends Person{
 	public Customer() {
 		super();
 	}
-	public Customer(int cNo, int point) {
-		super();
+	public Customer(String name, String hp, int cNo, int point) {
+		super(name, hp);
 		this.cNo = cNo;
 		this.point = point;
 	}
@@ -20,7 +20,7 @@ public class Customer extends Person{
 	
 	//메소드 일반
 	public void showInfo() {
-		
-	}
+		System.out.println("#이름:"+name+", #핸드폰:"+hp+", #고객번호:"+cNo+", #포인트점수:"+point);
 	
+	}
 }
